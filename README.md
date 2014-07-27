@@ -1,1 +1,3 @@
-Simple C# Library for dealing with USB HID devices. Enables you to use raw HID reports as no parsing support was nor will be inplemented :) Great for all those who build their own USB toys.
+MightyHID - Simple C# Library for dealing with USB HID devices. Enables you to use raw HID reports as no parsing support was nor will be inplemented :) Great for all those who build their own USB toys.
+
+MightyHIDTest - A piece of software that demonstrates how to use MightyHID in your projects. Application discovers all HID devices that are present in userspace (won't find your mouse or keyboard as those are intercepted by operating system and kept in kernel space), connects to the first device that was found and performs some basic Read/Write operations. Please keep in mind that we are dealing with raw HID reports here, so you will probably need to adjust report format to meet your needs :)
