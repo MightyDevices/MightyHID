@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace MightyHID
+namespace Mighty.HID
 {
     public class HIDInfo
     {

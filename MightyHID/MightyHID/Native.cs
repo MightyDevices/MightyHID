@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 
 
-namespace MightyHID
+namespace Mighty.HID
 {
     class Native
     {

@@ -3,7 +3,7 @@ using System.IO;
 using System.Collections.Generic;
 using Microsoft.Win32.SafeHandles;
 
-namespace MightyHID
+namespace Mighty.HID
 {
     public class HIDDev : IDisposable
     {
