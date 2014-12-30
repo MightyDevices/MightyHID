@@ -17,6 +17,7 @@ namespace Mighty.HID
         public FileStream fileStream 
         {
             get { return _fileStream; }
+            /* do not expose this setter */
             internal set { _fileStream = value; }
         }
 
@@ -36,13 +37,13 @@ namespace Mighty.HID
         }
 
         /* open hid device */
-        public bool Open(string path)
+        public bool Open(HIDInfo dev)
         {
             /* safe file handle */
             SafeFileHandle shandle;
 
             /* opens hid device file */
-            handle = Native.CreateFile(path, 
+            handle = Native.CreateFile(dev.Path, 
                 Native.GENERIC_READ | Native.GENERIC_WRITE,
                 Native.FILE_SHARE_READ | Native.FILE_SHARE_WRITE,
                 IntPtr.Zero, Native.OPEN_EXISTING, Native.FILE_FLAG_OVERLAPPED,
